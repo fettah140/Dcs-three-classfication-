@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.70)
 
 #4.	Entraînement de l'algorithme
-from sklearn.ensemble import RandomForestClassifier
-classifier = RandomForestClassifier(n_estimators=20, random_state=0)
+from sklearn.ensemble import DecisionTreeClassifier
+classifier = DecisionTreeClassifier()
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
